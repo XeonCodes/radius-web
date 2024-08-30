@@ -5,6 +5,7 @@ export const siteConfig = {
   description: "Make beautiful websites regardless of your design experience.",
 
   pathLinks: {
+    landingPage: "/",
     dashboardHome: "/dashboard",
     dashboardProfile: "/dashboard/profile",
     signin: "/signin",

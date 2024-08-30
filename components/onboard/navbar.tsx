@@ -8,11 +8,11 @@ import { siteConfig } from "@/config/site";
 
 function Navbar() {
   return (
-    <div className="bg-white z-10">
+    <div className="bg-white sticky top-0 z-10">
       <nav
         className={`${navbarPadding()} h-24 justify-between flex items-center`}
       >
-        <Link href={`${siteConfig.pathLinks.dashboardHome}`}>
+        <Link href={`${siteConfig.pathLinks.landingPage}`}>
           <h1 className={`text-[28px] text-black font-bold`}>Radius</h1>
         </Link>
         <div>

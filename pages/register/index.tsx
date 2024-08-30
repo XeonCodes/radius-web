@@ -5,12 +5,12 @@ import { siteConfig } from "@/config/site";
 import OnboardLayout from "@/layouts/onboard";
 import Link from "next/link";
 
-export default function IndexPage() {
+export default function RegisterPage() {
   const nav = () => {};
 
   return (
     <OnboardLayout>
-      <section className="flex flex-col gap-10 mb-20">
+      <section className="flex flex-col gap-10 mb-20 ">
         {/* Header Text */}
         <HeaderText
           title="Create your Radius account"
@@ -108,7 +108,7 @@ export default function IndexPage() {
             <button className="main-btn mt-1">Register</button>
             <Link href={`${siteConfig.pathLinks.dashboardHome}`}>
               <p className="text-black font-semibold underline underline-offset-4">
-                Forgot password?
+                Having trouble?
               </p>
             </Link>
           </div>
