@@ -23,11 +23,13 @@ module.exports = {
         light: {
           colors: {
             radGrey: "#868685",
+            primary: "#153300",
           },
         },
         dark: {
           colors: {
             radGrey: "#868685",
+            primary: "#153300",
           },
         },
       },

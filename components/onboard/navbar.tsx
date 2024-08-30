@@ -5,22 +5,28 @@ import { IoCloseSharp } from "react-icons/io5";
 import { MdClose } from "react-icons/md";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { SiConfluence } from "react-icons/si";
 
 function Navbar() {
   return (
-    <div className="bg-white sticky top-0 z-10">
-      <nav
-        className={`${navbarPadding()} h-24 justify-between flex items-center`}
+    <nav
+      className={`${navbarPadding()} w-[100%] lg:w-[76%] h-24 bg-white justify-between flex items-center`}
+    >
+      <Link
+        href={`${siteConfig.pathLinks.landingPage}`}
+        className="flex items-center gap-0"
       >
-        <Link href={`${siteConfig.pathLinks.landingPage}`}>
-          <h1 className={`text-[28px] text-black font-bold`}>Radius</h1>
-        </Link>
-        <div>
-          <MdClose color="black" size={24} />
-        </div>
-      </nav>
-      <Divider className="text-black bg-[#E2E2E1]" />
-    </div>
+        <SiConfluence size={26} className="text-primary rotate-[100deg]" />
+        <h1
+          className={`text-[32px] hidden sm:flex text-primary font-black italic`}
+        >
+          RADIUS
+        </h1>
+      </Link>
+      <div>
+        <MdClose color="black" size={28} />
+      </div>
+    </nav>
   );
 }
 

@@ -11,7 +11,9 @@ export default function OnboardLayout({
   return (
     <div className="relative bg-white flex flex-col gap-8">
       <Head />
-      <Navbar />
+      <div className="border-b-1 flex z-10 sticky top-0 justify-center">
+        <Navbar />
+      </div>
       <main className="px-4 sm:px-0 self-center w-[100%] sm:w-[480px]">
         {children}
       </main>
