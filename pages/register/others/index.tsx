@@ -1,6 +1,4 @@
 import HeaderText from "@/components/onboard/header";
-import { title } from "@/components/primitives";
-import { ThemeSwitch } from "@/components/theme-switch";
 import { siteConfig } from "@/config/site";
 import OnboardLayout from "@/layouts/onboard";
 import Link from "next/link";
