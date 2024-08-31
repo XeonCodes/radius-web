@@ -14,7 +14,7 @@ export default function SigninPage() {
         {/* Header Text */}
         <HeaderText
           title="Welcome back"
-          subtitle="New to Radius?"
+          subtitle={`New to ${siteConfig.name}?`}
           action={nav}
           actionText="Sign up"
           path="register"

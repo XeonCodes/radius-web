@@ -1,6 +1,5 @@
 import HeaderText from "@/components/onboard/header";
 import OnboardLayout from "@/layouts/onboard";
-import { RegisterStep1 } from "@/util/actions";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
@@ -10,13 +9,13 @@ export default function RegisterPage() {
       <section className="flex flex-col gap-10">
         <HeaderText
           action={() => console.log("ksncks")}
-          title="Create your Radius account"
+          title={`Create your ${siteConfig.name} account`}
           subtitle="Already have an account?"
           actionText="Log in"
           path="signin"
         />
 
-        <form onSubmit={RegisterStep1} className="flex flex-col gap-6">
+        <form className="flex flex-col gap-6">
           <div className="flex flex-col gap-1">
             <label htmlFor="email">
               <p className="label1">Your email</p>

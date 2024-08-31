@@ -20,7 +20,7 @@ function Navbar() {
         <h1
           className={`text-[32px] hidden sm:flex text-primary font-black italic`}
         >
-          RADIUS
+          {siteConfig.name.toUpperCase()}
         </h1>
       </Link>
       <Link href={`${siteConfig.pathLinks.landingPage}`}>
