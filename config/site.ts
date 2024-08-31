@@ -10,6 +10,7 @@ export const siteConfig = {
     dashboardProfile: "/dashboard/profile",
     signin: "/signin",
     register: "/register",
+    registerOthers: "/register/others",
   },
 
   links: {

@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 }
 
 .main-btn {
-  height: 47px;
+  height: 50px;
   background-color: var(--primaryColor);
   border-radius: 50px;
   color: black;

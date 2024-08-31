@@ -1,6 +1,7 @@
 import { title } from "@/components/primitives";
 import { ThemeSwitch } from "@/components/theme-switch";
 import DefaultLayout from "@/layouts/default";
+import { redirect } from "next/navigation";
 
 export default function IndexPage() {
   return (
